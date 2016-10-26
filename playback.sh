@@ -19,6 +19,10 @@
 #      REVISION:  ---
 #===============================================================================
 
+# 解决awk: line x: function strtonum never defined 错误
+sudo apt-get install gawk -y
+
+
 file=${1:-"record_stuff.txt"}                   # origin
 
 afile=tmp_a.txt                                 # tmp
